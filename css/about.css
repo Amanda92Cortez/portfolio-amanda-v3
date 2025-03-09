@@ -1,0 +1,149 @@
+/* Cabeçalho */
+header {
+    width: 100%;
+    background: #1f1f1f;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* About/Sobre */
+.about {
+    display: flex;
+    flex-direction: column;  /* Organiza a estrutura de "about" em coluna */
+    max-width: 1000px;
+    margin: 50px auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.about-content {
+    flex: 2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-content > .section {
+    display: none;
+}
+
+.about-content > .section.active {
+    display: block;
+}
+
+.about-content h2 {
+    color: #FF204E;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 100%;  /* Altere para 100% para ocupar toda a largura */
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.sidebar ul li.active, .sidebar ul li:hover {
+    background: #FF204E;
+}
+
+.sidebar ul li:hover {
+    transform: scale(1.1);
+}
+
+/* Itens de Experiência */
+.experience-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.experience-item .date {
+    color: #FF204E;
+    font-weight: bold;
+}
+
+.experience-item h4 {
+    color: #fff;
+    margin: 10px 0;
+}
+
+.experience-item p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Habilidades */
+#habilidades ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#habilidades ul li {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#habilidades ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#habilidades ul li i {
+    font-size: 2rem;
+    color: #FF204E;
+    margin-bottom: 10px;
+}
+
+#habilidades ul li span {
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Educação */
+#educacao {
+    color: #fff;
+    font-size: 1rem;
+}

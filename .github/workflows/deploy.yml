@@ -1,0 +1,31 @@
+name: Deploy para Produção
+
+on:
+  push:
+    branches:
+      - main  # Executa quando a branch main for atualizada
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v3
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Build do projeto
+        run: npm run build
+
+      - name: Deploy no servidor
+        run: |
+          ssh usuario@servidor.com "cd /caminho/da/aplicacao && git pull origin main && npm install && npm run start"
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}

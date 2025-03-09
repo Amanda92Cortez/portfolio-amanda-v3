@@ -1,0 +1,196 @@
+html, body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #121212;
+    color: white;
+    
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; 
+
+    font-family: 'fonteEspecial', sans-serif;
+}
+
+
+@font-face {
+    font-family: 'fonteEspecial';
+    src: url('../docs/TypewriterMonoFine.ttf') format('truetype'); /* Ajuste o caminho da fonte */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+header {
+    padding: 20px;
+    background: #1f1f1f;
+}
+
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.logo span {
+    color: #FF204E;
+}
+
+/* Ajuste da Seção Intro */
+
+#intro {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+    min-height: 60vh;
+    padding-top: 20px;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: row; /* Alinha a foto e o texto na horizontal */
+    align-items: center;
+    gap: 100px; /* Adiciona um espaçamento entre os elementos */
+}
+
+#intro h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+#intro p {
+    font-size: 1.2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#intro .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#intro .btn:hover {
+    background-color: darkorange;
+}
+
+
+
+/* Foto */
+.foto-circulo {
+    position: relative;
+    display: inline-block;
+    margin-top: 90px; /* Move a foto para baixo */
+    margin-bottom: 30px; /* Adiciona o espaço entre a foto e o conteúdo abaixo dela */
+}
+
+.foto-animada {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 3;
+}
+
+.circulo-animado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: girar 10s linear infinite;
+    z-index: 1;
+    background: conic-gradient(#FF204E 10%, transparent 30%);
+    mask: radial-gradient(circle, transparent 40%, black 41%);
+    -webkit-mask: radial-gradient(circle, transparent 40%, black 41%);
+}
+
+@keyframes girar {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+
+/* Ajuste do Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: auto; /* Coloca o rodapé no final da página */
+}
+
+/* Contato */
+.botoes-container {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 100px;
+}
+
+/* Botão de Download */
+.btn-download {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border: 2px solid #FF204E;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    position: relative;
+}
+
+.btn-download i {
+    font-size: 16px;
+}
+
+.btn-download:hover {
+    background-color: #FF204E;
+    color: black;
+}
+
+/* Ícones sociais */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FF204E;
+    border-radius: 50%;
+    color: orange;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    background-color: #FF204E;
+    color: black;
+}
