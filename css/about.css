@@ -105,6 +105,7 @@ header {
 
 /* Habilidades */
 #habilidades ul {
+    justify-content: center;
     list-style: none;
     padding: 0;
     display: flex;
@@ -144,6 +145,12 @@ header {
 
 /* Educação */
 #educacao {
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Estudo */
+#estudo {
     color: #fff;
     font-size: 1rem;
 }

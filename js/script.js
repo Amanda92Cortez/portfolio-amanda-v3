@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'Experiência': document.querySelector('#experiencia'),
         'Habilidades': document.querySelector('#habilidades'),
         'Educação': document.querySelector('#educacao'),
+        // 'Estudo': document.querySelector('#estudo'),
+
         // Adicione os outros itens aqui, como Habilidades e Educação
     };
 
@@ -39,5 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     sections['Experiência'].style.display = 'none';  // As outras seções começam ocultas
     sections['Habilidades'].style.display = 'none';
     sections['Educação'].style.display = 'none';
+    // sections['Estudo'].style.display = 'none';
+
 });
 
