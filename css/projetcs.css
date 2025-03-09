@@ -1,0 +1,76 @@
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    position: relative;
+    width: 80%;
+}
+
+.projects-wrapper {
+    overflow: hidden;
+    width: 70%;
+}
+
+.projects-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.project-card {
+    background: #242424;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    min-width: 200px;
+    text-align: center;
+}
+
+button {
+    background: #FF204E;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: darkorange;
+}
+
+/* Logo Git hub */
+a {
+    justify-content: center;
+    text-decoration: none;
+    color: #FF204E;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.2em;
+}
+
+a:hover {
+    color: darkorange;
+}
+
+a i.fab.fa-github {
+    font-size: 1.5em;
+}
