@@ -10,28 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Verificar estrutura do repositório
-        run: ls -la
-
       - name: Baixar o repositório
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          ref: main
 
-      - name: Configurar Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
-      - name: Instalar dependências
-        run: npm install
-
-      - name: Build do projeto
-        run: npm run build
-
-      - name: Deploy no servidor
+      - name: Enviar arquivos para o servidor
         run: |
-          ssh usuario@servidor.com "cd /caminho/da/aplicacao && git pull origin main && npm install && npm run start"
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > private_key
+          chmod 600 private_key
+          rsync -avz -e "ssh -i private_key -o StrictHostKeyChecking=no" ./ usuario@servidor.com:/caminho/da/aplicacao
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
