@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/navigation.css">
     <link rel="stylesheet" href="../css/projetcs.css">
+    <link rel="stylesheet" href="../css/filtros.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -23,34 +24,96 @@
     
     <section id="projects">
         <h2>Confira meus projetos</h2>
+
+        <div class="filtros">
+            <div><button onclick="filtrarProjetos('todos')">Todos</button></div>
+            <div><button onclick="filtrarProjetos('fullstack')"><i class="fa-solid fa-laptop-code"></i> Full Stack</i></button></div>
+            <div><button onclick="filtrarProjetos('frontend')"><i class="fa-solid fa-code"></i> Front End</button></div>
+            <div><button onclick="filtrarProjetos('backend')"><i class="fa-solid fa-server"></i> Back End</button></div>
+            <div><button onclick="filtrarProjetos('automacao')"><i class="fa-solid fa-vial"></i> Automação (QA)</button></div>
+        </div>
+
         <div class="carousel-container">
             <button id="prevBtn">&#10094;</button>
             <div class="projects-wrapper">
                 <div class="projects-container">
-                    <div class="project-card">
-                        <h3>Projeto 1</h3>
-                        <p>Descrição breve do projeto.</p>
-                        <a href="https://github.com/seuusuario/projeto1" target="_blank"><i class="fab fa-github"></i></a>
+
+                    <div class="project-card projeto" data-categoria="fullstack">
+                        <h3>Agenda de Cirurgia</h3>
+                        <p>App de visualização das salas de cirurgias</p>
+                        <p>Linguagens: HTML, CSS, PHP, Bootstrap</p>
+                        <a href="https://github.com/Amanda92Cortez/agenda-cirurgia-php" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
                     </div>
-                    <div class="project-card">
-                        <h3>Projeto 2</h3>
-                        <p>Descrição breve do projeto.</p>
-                        <a href="https://github.com/seuusuario/projeto2" target="_blank"><i class="fab fa-github"></i></a>
+                    <div class="project-card projeto" data-categoria="frontend">
+                        <h3>Agenda de Cirurgia</h3>
+                        <p>App de visualização das salas de cirurgias</p>
+                        <p>Linguagens: React, JavaScritp, Oracle</p>
+                        <a href="https://github.com/Amanda92Cortez/agenda-cirurgia-react" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
                     </div>
-                    <div class="project-card">
-                        <h3>Projeto 3</h3>
-                        <p>Descrição breve do projeto.</p>
-                        <a href="https://github.com/seuusuario/projeto3" target="_blank"><i class="fab fa-github"></i></a>
+                    <div class="project-card projeto" data-categoria="frontend">
+                        <h3>Alurinha</h3>
+                        <p>App apresenta bloco de "cursos" da Alura</p>
+                        <p>Linguagens: HTML, CSS</p>
+                        <a href="https://github.com/Amanda92Cortez/alura-alurinha" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="../img/alurinha.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
                     </div>
-                    <div class="project-card">
+
+                    
+                    <div class="project-card projeto" data-categoria="automacao">
                         <h3>Projeto 4</h3>
                         <p>Descrição breve do projeto.</p>
                         <a href="https://github.com/seuusuario/projeto4" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
                     </div>
-                    <div class="project-card">
+                    <div class="project-card projeto" data-categoria="automacao">
                         <h3>Projeto 5</h3>
                         <p>Descrição breve do projeto.</p>
                         <a href="https://github.com/seuusuario/projeto5" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+                    </div>
+                    <div class="project-card projeto" data-categoria="automacao">
+                        <h3>Projeto 5</h3>
+                        <p>Descrição breve do projeto.</p>
+                        <a href="https://github.com/seuusuario/projeto5" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+                    </div>
+                    <div class="project-card projeto" data-categoria="automacao">
+                        <h3>Projeto 5</h3>
+                        <p>Descrição breve do projeto.</p>
+                        <a href="https://github.com/seuusuario/projeto5" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+                    </div>
+                    <div class="project-card projeto" data-categoria="automacao">
+                        <h3>Projeto 5</h3>
+                        <p>Descrição breve do projeto.</p>
+                        <a href="https://github.com/seuusuario/projeto5" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+                    </div>
+                    <div class="project-card projeto" data-categoria="automacao">
+                        <h3>Projeto 5</h3>
+                        <p>Descrição breve do projeto.</p>
+                        <a href="https://github.com/seuusuario/projeto5" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+                    </div>
+                    <div class="project-card projeto" data-categoria="automacao">
+                        <h3>Projeto 5</h3>
+                        <p>Descrição breve do projeto.</p>
+                        <a href="https://github.com/seuusuario/projeto5" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+                    </div>
+                    <div class="project-card projeto" data-categoria="automacao">
+                        <h3>Projeto 5</h3>
+                        <p>Descrição breve do projeto.</p>
+                        <a href="https://github.com/seuusuario/projeto5" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+                    </div>
+                    <div class="project-card projeto" data-categoria="automacao">
+                        <h3>Projeto 5</h3>
+                        <p>Descrição breve do projeto.</p>
+                        <a href="https://github.com/seuusuario/projeto5" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
                     </div>
                 </div>
             </div>

@@ -19,12 +19,12 @@ nav a {
     justify-content: center;
     margin: 20px auto;
     position: relative;
-    width: 80%;
+    width: 100%;
 }
 
 .projects-wrapper {
     overflow: hidden;
-    width: 70%;
+    width: 80%;
 }
 
 .projects-container {
@@ -35,9 +35,9 @@ nav a {
 .project-card {
     background: #242424;
     padding: 20px;
-    margin: 10px;
+    margin: 20px;
     border-radius: 10px;
-    min-width: 200px;
+    min-width: 400px;
     text-align: center;
 }
 
@@ -63,7 +63,7 @@ a {
     font-weight: bold;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     font-size: 1.2em;
 }
 
@@ -71,6 +71,18 @@ a:hover {
     color: darkorange;
 }
 
-a i.fab.fa-github {
+a i {
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+
+.project-card a {
+    display: inline-flex; /* Garante que os ícones fiquem alinhados */
+    align-items: center; /* Centraliza os ícones verticalmente */
+    margin-right: 20px; /* Espaço entre os links */
+}
+
+
+.project-card a i {
     font-size: 1.5em;
 }

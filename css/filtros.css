@@ -1,0 +1,34 @@
+
+/* Filtros */
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filtros div {
+    display: inline-block;
+}
+
+.filtros button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.filtros button:hover {
+    background-color: #FF204E;
+    transform: scale(1.05);
+}
+
+.filtros button:active {
+    background-color: #FF204E;
+    transform: scale(0.95);
+}
