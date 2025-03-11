@@ -45,35 +45,35 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-// Projetcts
-document.addEventListener("DOMContentLoaded", function () {
-    const projectsContainer = document.querySelector(".projects-container");
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
-    let index = 0;
-    const projectCards = document.querySelectorAll(".project-card");
-    const totalProjects = projectCards.length;
-    const visibleProjects = 3;
+// // Projetcts
+// document.addEventListener("DOMContentLoaded", function () {
+//     const projectsContainer = document.querySelector(".projects-container");
+//     const prevBtn = document.getElementById("prevBtn");
+//     const nextBtn = document.getElementById("nextBtn");
+//     let index = 0;
+//     const projectCards = document.querySelectorAll(".project-card");
+//     const totalProjects = projectCards.length;
+//     const visibleProjects = 3;
 
-    function updateCarousel() {
-        const offset = -index * (100 / visibleProjects) + "%";
-        projectsContainer.style.transform = "translateX(" + offset + ")";
-    }
+//     function updateCarousel() {
+//         const offset = -index * (100 / visibleProjects) + "%";
+//         projectsContainer.style.transform = "translateX(" + offset + ")";
+//     }
 
-    nextBtn.addEventListener("click", function () {
-        if (index < totalProjects - visibleProjects) {
-            index++;
-            updateCarousel();
-        }
-    });
+//     nextBtn.addEventListener("click", function () {
+//         if (index < totalProjects - visibleProjects) {
+//             index++;
+//             updateCarousel();
+//         }
+//     });
 
-    prevBtn.addEventListener("click", function () {
-        if (index > 0) {
-            index--;
-            updateCarousel();
-        }
-    });
-});
+//     prevBtn.addEventListener("click", function () {
+//         if (index > 0) {
+//             index--;
+//             updateCarousel();
+//         }
+//     });
+// });
 
 
 // Filtros
