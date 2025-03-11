@@ -2,38 +2,12 @@ body {
     background: #121212;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.carousel-container {
-    display: flex;
-    align-items: center;
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     justify-content: center;
-    margin: 20px auto;
-    position: relative;
-    width: 100%;
-}
-
-.projects-wrapper {
-    overflow: hidden;
-    width: 80%;
-}
-
-.projects-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+    margin-top: 20px;
 }
 
 .project-card {
@@ -41,7 +15,7 @@ nav a {
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-    min-width: 400px;
+    min-width: 250px;
     text-align: center;
     opacity: 0.75;
 }
@@ -66,9 +40,9 @@ a {
     text-decoration: none;
     color: #FF204E;
     font-weight: bold;
-    display: flex;
+    display: inline-block;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     font-size: 1.2em;
 }
 
@@ -82,13 +56,14 @@ a i {
     font-size: 1.5em;
 }
 
-.project-card a {
-    display: inline-flex; /* Garante que os ícones fiquem alinhados */
-    align-items: center; /* Centraliza os ícones verticalmente */
-    margin-right: 20px; /* Espaço entre os links */
-}
-
-
-.project-card a i {
-    font-size: 1.5em;
+.projeto {
+    /* background: #f4f4f4; */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Garante que tudo fique centralizado */
+    height: auto;
 }

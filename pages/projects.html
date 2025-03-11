@@ -22,9 +22,8 @@
         </nav>
     </header>
     
-    <section id="projects">
-        <h2>Confira meus projetos</h2>
-
+    <section id="projetos">
+        <h2>Projetos</h2>
         <div class="filtros">
             <div><button onclick="filtrarProjetos('todos')">Todos</button></div>
             <div><button onclick="filtrarProjetos('fullstack')"><i class="fa-solid fa-laptop-code"></i> Full Stack</i></button></div>
@@ -32,100 +31,152 @@
             <div><button onclick="filtrarProjetos('backend')"><i class="fa-solid fa-server"></i> Back End</button></div>
             <div><button onclick="filtrarProjetos('automacao')"><i class="fa-solid fa-vial"></i> Automação (QA)</button></div>
         </div>
-
-        <div class="carousel-container">
+        <!-- 
+        Full Stack: <i class="fa-solid fa-laptop-code fa-2x">
+        Front End: <i class="fa-solid fa-code fa-2x"></i>
+        BackEnd: <i class="fa-solid fa-server fa-2x"></i>
+        Automação: <i class="fa-solid fa-robot fa-2x"></i>
+        -->
+        <div class="projetos-container">
             <canvas id="neonNetwork"></canvas>
-
-            <button id="prevBtn">&#10094;</button>
-            <div class="projects-wrapper">
-                <div class="projects-container">
-
-                    <div class="project-card projeto" data-categoria="fullstack">
-                        <h3>Agenda de Cirurgia</h3>
-                        <p>App de visualização das salas de cirurgias</p>
-                        <p>Linguagens: HTML, CSS, PHP, Bootstrap</p>
-                        <a href="https://github.com/Amanda92Cortez/agenda-cirurgia-php" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
-                        
-                    </div>
-                    <div class="project-card projeto" data-categoria="frontend">
-                        <h3>Agenda de Cirurgia</h3>
-                        <p>App de visualização das salas de cirurgias</p>
-                        <p>Linguagens: React, JavaScritp, Oracle</p>
-                        <a href="https://github.com/Amanda92Cortez/agenda-cirurgia-react" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
-                    </div>
-                    <div class="project-card projeto" data-categoria="frontend">
-                        <h3>Alurinha</h3>
-                        <p>App apresenta bloco de "cursos" da Alura</p>
-                        <p>Linguagens: HTML, CSS</p>
-                        <a href="https://github.com/Amanda92Cortez/alura-alurinha" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="../img/alurinha.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
-                    </div>
-                    <div class="project-card projeto" data-categoria="frontend">
-                        <h3>Alura Barbearia</h3>
-                        <p>O App utilizando a comunicação de iframe com youtube, comunicação entre web da Barbearia</p>
-                        <p>Lingaguens: HTML, CSS</p>
-                        <a href="https://github.com/Amanda92Cortez/alura-barbearia" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="../img/barbearia.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
-                    </div>
-                    <div class="project-card projeto" data-categoria="front">
-                        <h3>Cafeteria Cortez</h3>
-                        <p>O App com modelo de Cafeteria com protudos e detalhes de cada, também formulário de satisfação</p>
-                        <a href="https://github.com/Amanda92Cortez/alura-coffee-shop" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="../img/coffeCortez.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
-                    </div>
-                    
-                    <div class="project-card projeto" data-categoria="automacao">
-                        <h3>Projeto 5</h3>
-                        <p>Descrição breve do projeto.</p>
-                        <a href="https://github.com/seuusuario/projeto5" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
-                    </div>
-                    <div class="project-card projeto" data-categoria="automacao">
-                        <h3>Projeto 5</h3>
-                        <p>Descrição breve do projeto.</p>
-                        <a href="https://github.com/seuusuario/projeto5" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
-                    </div>
-                    <div class="project-card projeto" data-categoria="automacao">
-                        <h3>Projeto 5</h3>
-                        <p>Descrição breve do projeto.</p>
-                        <a href="https://github.com/seuusuario/projeto5" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
-                    </div>
-                    <div class="project-card projeto" data-categoria="automacao">
-                        <h3>Projeto 5</h3>
-                        <p>Descrição breve do projeto.</p>
-                        <a href="https://github.com/seuusuario/projeto5" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
-                    </div>
-                    <div class="project-card projeto" data-categoria="automacao">
-                        <h3>Projeto 5</h3>
-                        <p>Descrição breve do projeto.</p>
-                        <a href="https://github.com/seuusuario/projeto5" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
-                    </div>
-                    <div class="project-card projeto" data-categoria="automacao">
-                        <h3>Projeto 5</h3>
-                        <p>Descrição breve do projeto.</p>
-                        <a href="https://github.com/seuusuario/projeto5" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
-                    </div>
-                    <div class="project-card projeto" data-categoria="automacao">
-                        <h3>Projeto 5</h3>
-                        <p>Descrição breve do projeto.</p>
-                        <a href="https://github.com/seuusuario/projeto5" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
-                    </div>
-                </div>
+            <!-- Projetos -->
+            <div class="project-card projeto" data-categoria="fullstack">
+                <h3>Agenda de Cirurgia</h3>
+                <p>App de visualização das salas de cirurgias.</p>
+                <p>Linguagens: HTML, CSS, PHP, Bootstrap</p>
+                <a href="https://github.com/Amanda92Cortez/agenda-cirurgia-php" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
             </div>
-            <button id="nextBtn">&#10095;</button>
+
+            <div class="project-card projeto" data-categoria="frontend">
+                <h3>Agenda de Cirurgia</h3>
+                <p>App de visualização das salas de cirurgias.</p>
+                <p>Linguagens: React, JavaScritp, Oracle</p>
+                <a href="https://github.com/Amanda92Cortez/agenda-cirurgia-react" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="../img/agenda_cirurgia_hosp_10_julho.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+            </div>
+
+            <div class="project-card projeto" data-categoria="frontend">
+                <h3>Alurinha</h3>
+                <p>App apresenta bloco de "cursos" da Alura.</p>
+                <p>Linguagens: HTML, CSS</p>
+                <a href="https://github.com/Amanda92Cortez/alura-alurinha" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="../img/alurinha.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+            </div>
+
+            <div class="project-card projeto" data-categoria="frontend">
+                <h3>Alura Barbearia</h3>
+                <p>O App utilizando a comunicação de iframe com youtube, comunicação entre web da Barbearia.</p>
+                <p>Lingaguens: HTML, CSS</p>
+                <a href="https://github.com/Amanda92Cortez/alura-barbearia" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="../img/barbearia.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+            </div>
+
+            <div class="project-card projeto" data-categoria="frontend">
+                <h3>Cafeteria Cortez</h3>
+                <p>O App com modelo de Cafeteria com protudos e detalhes de cada, também formulário de satisfação.</p>
+                <p>Linguagens: HTML, CSS, JavaScript, Bootstrap</p>
+                <a href="https://github.com/Amanda92Cortez/alura-coffee-shop" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="../img/coffeCortez.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+            </div>
+
+            <div class="project-card projeto" data-categoria="frontend">
+                <h3>Harry Potter</h3>
+                <p>O App listada das casas com direcionamento de site de cada um, também trabalhando com responsividade mobile.</p>
+                <p>Linguagens: HTML, CSS</p>
+                <a href="https://github.com/Amanda92Cortez/alura-harry-potter" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="../img/harrypotter.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+            </div>
+
+            <div class="project-card projeto" data-categoria="automacao">
+                <h3>Bytebank</h3>
+                <p>O Bytebank é um MVP de banco digital que está no início de suas atividades mas ainda falta muito que ser desenvolvido.</p>
+                <p>Linguagens: React, Node JS, Cypress</p>
+                <a href="https://github.com/Amanda92Cortez/alura-cypress-reaclurt-bytebank" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="../img/cypressBytebank.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+            </div>
+
+            <div class="project-card projeto" data-categoria="automacao">
+                <h3>Jornada Milha</h3>
+                <p>O Jornada Milhas é uma StartUP fictícia.</p>
+                <p>Linguagens: Angular, Playwright</p>
+                <a href="https://github.com/Amanda92Cortez/alura-jornada-milhas-playwright" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="../img/jornadaMilha_play.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+            </div>    
+            
+            <div class="project-card projeto" data-categoria="automacao">
+                <h3>CAC TAT</h3>
+                <p>Utilização da ferramenta Cypress. Aula pelo Walmyr.</p>
+                <p>Linguagens: Cypress</p>
+                <a href="https://github.com/Amanda92Cortez/udemy_cypress-do-zero-a-nuvem" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="../img/cac-tat.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+            </div>  
+            
+            <div class="project-card projeto" data-categoria="automacao">
+                <h3>FGC</h3>
+                <p>Automaizando para praticar a linguagem Cypress.</p>
+                <p>Acesso repositório bloqueado devido segurança e privacidade.</p>
+                <p>Linguagens: Cypress</p>
+                <a href="https://github.com/Amanda92Cortez/cypress-fgc-2.0" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="../img/fgc.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+            </div>  
+
+            <div class="project-card projeto" data-categoria="frontend">
+                <h3>Meu Portfolio</h3>
+                <p>O App apresneta de cada comunicação de projetos para visualizar e sobre mim, primeira versão.</p>
+                <p>Linguagens: HTML, CSS, JavaScript, React</p>
+                <a href="https://github.com/Amanda92Cortez/portfolio-amanda-react" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="../img/portfolio_v1.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+            </div>   
+            
+            <div class="project-card projeto" data-categoria="frontend">
+                <h3>PetShop</h3>
+                <p>O App com tratamentos de campos para preenchimentos e API Cep para facilitar a localização de endereço.</p>
+                <p>Linguagens: HTML, CSS, JavaScript</p>
+                <a href="https://github.com/Amanda92Cortez/alura-petshop" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="../img/petshop.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+            </div> 
+
+            <div class="project-card projeto" data-categoria="frontend">
+                <h3>Organograma</h3>
+                <p>App da simulação de incluir pessoas no time e cadastrar novo time.</p>
+                <p>Linguagens: HTML, CSS, JavaScript, React</p>
+                <a href="https://github.com/Amanda92Cortez/alura-organograma-v2" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="../img/organograma.gif" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+            </div> 
+
+            <div class="project-card projeto" data-categoria="frontend">
+                <h3>Nutricionista Simples</h3>
+                <p>O App Cadastrar paciente do peso, altura e gordura corporal pra calcular IMC.</p>
+                <p>Andamento melhoria</p>
+                <p>Linguagens: HTML, CSS, JavaScript</p>
+                <a href="https://github.com/Amanda92Cortez/alura-nutricionista" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="../img/nutricionista.png" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+            </div> 
+
+            <div class="project-card projeto" data-categoria="frontend">
+                <h3>Meteora</h3>
+                <p>App de simulação de um e-commerce dos produtos.</p>
+                <p>Linguagens: HTML, CSS, Boostrap</p>
+                <a href="https://github.com/Amanda92Cortez/alura-meteora-bootstrap" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="../img/meteora-boostrap.png" target="_blank"><i class="fa-solid fa-photo-film"></i></a>
+            </div> 
+
+            <!-- <div class="project-card projeto" data-categoria="backend">
+                <img src="./img/nestjs.jpg" alt="Imagem do projeto">
+                <h3>Loja Nestjs</h3>
+                <p>O App lista dos produtos com imagem, título, descrição e valor. Cadastrar via Postman</p>
+                <p>Andamento melhoria e ajuste</p>
+                <p>Linguagens: Node.JS, TypeScript, NestJS, Postman</p>
+                <p class="botao"><i class="fa-solid fa-server fa-2x"></i></p>
+                <a href="https://github.com/Amanda92Cortez/alura-loja-nestjs" target="_blank"><i class="fab fa-github"></i></a>
+            </div>  -->
+
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 [Seu Nome]. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Amanda Cortez. Todos os direitos reservados.</p>
     </footer>
 
     <script src="../js/script.js"></script>
