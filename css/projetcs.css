@@ -1,69 +1,68 @@
-body {    
-    background: #121212;
-}
-
+/* Projetos */
 .projetos-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    /* grid-template-columns: repeat(auto-fit, minmax(375px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 20px; */
     justify-content: center;
-    margin-top: 20px;
-}
-
-.project-card {
-    background: #242424;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    min-width: 250px;
-    text-align: center;
-    opacity: 0.75;
-}
-
-button {
-    background: #FF204E;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 5px;
-}
-
-button:hover {
-    background: darkorange;
-}
-
-/* Logo Git hub */
-a {
-    justify-content: center;
-    text-decoration: none;
-    color: #FF204E;
-    font-weight: bold;
-    display: inline-block;
-    align-items: center;
-    gap: 20px;
-    font-size: 1.2em;
-}
-
-a:hover {
-    color: darkorange;
-}
-
-a i {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 1.5em;
+    margin-top: 10px;
 }
 
 .projeto {
-    /* background: #f4f4f4; */
     padding: 15px;
     border-radius: 8px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Garante que tudo fique centralizado */
+    /* justify-content: center; */
     height: auto;
+}
+
+.project-card {
+    background: #242424;
+    padding: 5px;
+    /* margin: 15px; */
+
+    margin-top: 20px;  /* Espaço no topo */
+    margin-right: 20px; /* Espaço à direita */
+    margin-bottom: 20px; /* Espaço abaixo */
+    margin-left: 20px; /* Espaço à esquerda */
+
+    border-radius: 10px;
+    min-width: 250px;
+    text-align: center;
+    opacity: 0.75;
+}
+
+/* Centraliza e mantém os textos alinhados */
+.projeto h3, 
+.projeto p, 
+.projeto p i {
+    max-width: 100%; 
+    text-align: center;
+    margin: 20px 10px; 
+}
+
+/* Link */
+.projeto .link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px; /* Ajuste conforme necessário */
+    font-size: 1.75rem; /* Para aumentar o ícone */
+    color: #FF204E; /* Ajuste a cor conforme necessário */
+    text-decoration: none;
+    /* font-size: 1.5em; */
+}
+
+.projeto .link i {
+    margin: 0 5px;
+}
+
+.projeto .links-container {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os links */
+    justify-content: center;
+    margin-top: auto;
 }
