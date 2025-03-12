@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'Experiência': document.querySelector('#experiencia'),
         'Habilidades': document.querySelector('#habilidades'),
         'Educação': document.querySelector('#educacao'),
-        // 'Estudo': document.querySelector('#estudo'),
+        'Estudo': document.querySelector('#estudo'),
 
         // Adicione os outros itens aqui, como Habilidades e Educação
     };
@@ -41,40 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
     sections['Experiência'].style.display = 'none';  // As outras seções começam ocultas
     sections['Habilidades'].style.display = 'none';
     sections['Educação'].style.display = 'none';
-    // sections['Estudo'].style.display = 'none';
+    sections['Estudo'].style.display = 'none';
 
 });
-
-// // Projetcts
-// document.addEventListener("DOMContentLoaded", function () {
-//     const projectsContainer = document.querySelector(".projects-container");
-//     const prevBtn = document.getElementById("prevBtn");
-//     const nextBtn = document.getElementById("nextBtn");
-//     let index = 0;
-//     const projectCards = document.querySelectorAll(".project-card");
-//     const totalProjects = projectCards.length;
-//     const visibleProjects = 3;
-
-//     function updateCarousel() {
-//         const offset = -index * (100 / visibleProjects) + "%";
-//         projectsContainer.style.transform = "translateX(" + offset + ")";
-//     }
-
-//     nextBtn.addEventListener("click", function () {
-//         if (index < totalProjects - visibleProjects) {
-//             index++;
-//             updateCarousel();
-//         }
-//     });
-
-//     prevBtn.addEventListener("click", function () {
-//         if (index > 0) {
-//             index--;
-//             updateCarousel();
-//         }
-//     });
-// });
-
 
 // Filtros
 function filtrarProjetos(categoria) {
