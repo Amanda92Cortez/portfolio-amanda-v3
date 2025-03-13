@@ -1,53 +1,58 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1; /* Faz o main ocupar o espaço restante sem empurrar o header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 #intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
     text-align: center;
-    width: 800px;
+    width: 100%;
+    max-width: 600px;
     margin: auto;
 }
 
 .caixa-mensagem {
     background: #1f1f1f;
-    /* padding: 20px; */
     border-radius: 10px;
-    /* margin-top: 20px; */
-    /* width: auto; */
-    opacity: 0.75;
+    padding: 20px;
+    opacity: 0.85;
+    width: 100%;
 }
 
-.error-code {
-    font-size: 80px;
-    font-weight: bold;
-    color: #333;
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-}
 .message {
-    width: 500px;
     font-size: 24px;
     font-weight: bold;
     color: #FF204E;
+    margin: 10px auto;
 }
-.description {
-    font-size: 16px;
-    color: #FF204E;
-    margin: 40px 0;
-}
-.home-link {
-    font-size: 18px;
-    color: #007bff;
-    text-decoration: none;
-}
-.home-link:hover {
-    text-decoration: underline;
-}
+
 .image-container img {
-    width: 200px;
+    width: 150px;
+    max-width: 80%;
     animation: bounce 2s infinite;
 }
-/* @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-} */
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .message {
+        font-size: 20px;
+    }
+
+    .image-container img {
+        width: 120px;
+    }
+}
