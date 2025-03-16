@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'Habilidades': document.querySelector('#habilidades'),
         'Educação': document.querySelector('#educacao'),
         'Estudo': document.querySelector('#estudo'),
+        'Metas': document.querySelector('#metas'),
 
         // Adicione os outros itens aqui, como Habilidades e Educação
     };
@@ -42,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     sections['Habilidades'].style.display = 'none';
     sections['Educação'].style.display = 'none';
     sections['Estudo'].style.display = 'none';
+    sections['Metas'].style.display = 'none';
 
 });
 
